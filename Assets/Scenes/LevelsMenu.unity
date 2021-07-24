@@ -1025,7 +1025,6 @@ MonoBehaviour:
   - {fileID: 1560115886}
   - {fileID: 238675197}
   - {fileID: 1231090188}
-  - {fileID: 0}
   deleteData: 0
   padlock: {fileID: 21300000, guid: a4746cfaa6694d94a9f9cd400268f088, type: 3}
 --- !u!1001 &619235702
