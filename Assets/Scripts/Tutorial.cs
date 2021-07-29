@@ -11,9 +11,11 @@ public class Tutorial : MonoBehaviour
     public Vector2 position2;
     private int isFirstTime;
     public GameManager gameManager;
+    public Button pauseButton; 
     // Start is called before the first frame update
     void Start()
     {
+        
         PlayerPrefs.DeleteKey("isPlayingFirstTime");
         isFirstTime =PlayerPrefs.GetInt("isPlayingFirstTime", 1);
         if (isFirstTime == 0)
@@ -22,6 +24,7 @@ public class Tutorial : MonoBehaviour
         }
         else
         {
+            pauseButton.interactable = false;
             GameManager.pauseGame = true;
             gameManager.enabled = false;
             
@@ -38,7 +41,7 @@ public class Tutorial : MonoBehaviour
         tutorialCanvas.SetActive(false);
         gameManager.enabled = true;
         GameManager.pauseGame = false ;
-
+        pauseButton.interactable = true;
 
     }
 

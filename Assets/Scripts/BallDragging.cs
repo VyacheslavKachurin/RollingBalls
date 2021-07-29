@@ -45,8 +45,12 @@ public class BallDragging : MonoBehaviour
     protected void Deathffects()
     {
         CameraShake.Shake();
-        Instantiate(deathParticle, transform.position, Quaternion.identity);
-        AudioSource.PlayClipAtPoint(deathSounds[index], new Vector3(0, 0, -9), 1f);
+       
+            Instantiate(deathParticle, transform.position, Quaternion.identity);
+        if (GameManager.isSoundsOn)
+        {
+            AudioSource.PlayClipAtPoint(deathSounds[index], new Vector3(0, 0, -9), 1f);
+        }
         Destroy(gameObject);
     }
 

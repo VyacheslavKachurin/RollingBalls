@@ -461,3 +461,4 @@ MonoBehaviour:
   position1: {x: 3, y: 3}
   position2: {x: -3, y: -3}
   gameManager: {fileID: 0}
+  pauseButton: {fileID: 0}

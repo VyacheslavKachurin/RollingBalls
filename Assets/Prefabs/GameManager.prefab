@@ -791,7 +791,7 @@ MonoBehaviour:
   PausePanel: {fileID: 1250427905741230268}
   ReplayPanel: {fileID: 1250427907097680532}
   LevelCompletedPanel: {fileID: 1250427906963591090}
-  timer: 15
+  timer: 12
   pauseButton: {fileID: 1250427905733664105}
   circleAnimator: {fileID: 6915431828052141093}
 --- !u!1 &1250427905733664087
@@ -2194,6 +2194,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1250427905730038423}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: SwitchSounds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5926194189149342707}
+        m_TargetAssemblyTypeName: SoundButtonChange, Assembly-CSharp
+        m_MethodName: SwitchSprite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
